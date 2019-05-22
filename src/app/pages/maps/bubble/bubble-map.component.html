@@ -1,0 +1,35 @@
+<div class="row icon-comp">
+  <div class="col">
+    <nb-card>
+      <nb-card-header>Bubble Maps</nb-card-header>
+      <nb-card-body>
+        <div echarts [options]="options" class="echarts"></div>
+      </nb-card-body>
+
+      <h6>The transactions of Katz’s work predominantly take place in the US and European secondary markets. </h6>
+      <p>Most of his artworks were auctioned and sold in the USA. Afterwards, they were introduced to auction houses in
+        the UK and Germany. With consideration to the international scale, 66% of the sales remained in the USA. Katz’s
+        average sales price is higher in the USA than it is overseas.</p>
+    </nb-card>
+  </div>
+  <div class="col">
+
+    <!-- <div class="report_header"> -->
+    <h3>KEY NUMBERS</h3>
+
+    <nb-card size="medium">
+      <nb-card-body>
+        <div class="progress-info" *ngFor="let item of sales_report">
+          <div class="title">{{ item.title }}</div>
+          <div class="value">{{ item.value }}</div>
+          <nb-progress-bar [value]="70"></nb-progress-bar>
+          <div class="description">
+            <bdi>{{ item.description }}</bdi>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <!-- </div> -->
+
+  </div>
+</div>

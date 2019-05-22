@@ -1,0 +1,75 @@
+<div class="row hammer-price">
+  <h4>In the last decade, the auction prices have always matched-priced the works along the auction houses’ low-estimate
+    line. As the pricing volatility drops, the investor confidence grows relatively. </h4>
+  <div class="col">
+    <nb-card>
+      <nb-card-header>CORRELATION TO OTHER INVESTMENT VEHICLES</nb-card-header>
+      <nb-card-body>
+        <ngx-chartjs-line></ngx-chartjs-line>
+      </nb-card-body>
+
+      <p>Alex Katz’s specific series’ relative performance compared to other stocks is negatively correlated. Artwork
+        are considered as bearish investment placements for risk-averse investors. Thus, as the stock market performs
+        poorly, investors tend to shift their focus away from the bullish market to hold a long-term investment.</p>
+      <p>
+        The chart above shows the historical Alex Katz’s work price/cm² percentage change from 2001 to 2018 for along
+        with the other investment vehicles historical performance percentage.
+      </p>
+      <p>
+        Through the graph we observe that Alex’s price/cm² change has a standard deviation of 0.60 from the mean of
+        25.70%. This is only slightly higher compared to the S&P, Gold and FTSE which have a standard deviation of 0.17,
+        0.16 and 0.14 from their mean of 3.90%, 8.25% and 2.50% respectively. From 2001 to 2009, the volatility in
+        Alex’s ratio of price to cm² is 0.78. This majorly reduces by 56% to 0.34 in 2010 to 2018. This trend showcases
+        the steadiness and reduction in volatility that Alex’s works have and could continue to face. This will make it
+        a more stable instrument to invest in.
+      </p>
+    </nb-card>
+  </div>
+
+  <div class="col">
+    <!-- content to be added -->
+    <nb-card>
+      <nb-card-header></nb-card-header>
+      <nb-card-body>
+        <ngx-echarts-multiple-xaxis></ngx-echarts-multiple-xaxis>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+</div>
+
+
+
+
+
+<!-- <div class="row">
+  <div class="col-md-12 col-lg-12 col-xxxl-6">
+    <nb-card>
+      <nb-card-header>Window Form</nb-card-header>
+      <nb-card-body>
+        <button (click)="openWindowForm()" nbButton>Open window form</button>
+
+        <button (click)="openWindow(contentTemplate)" nbButton>Open window with template</button>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-md-12 col-lg-12 col-xxxl-6">
+    <nb-card>
+      <nb-card-header>Window Without Backdrop</nb-card-header>
+      <nb-card-body>
+        <button (click)="openWindow(contentTemplate)" nbButton>Open window with backdrop</button>
+
+        <button (click)="openWindowWithoutBackdrop()" nbButton>Open window without backdrop</button>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+<ng-template #contentTemplate let-data>
+  <p>Here is the text provided via config: "{{ data.title }}"</p>
+</ng-template>
+
+<ng-template #disabledEsc>
+  Disabled close on escape click.
+</ng-template> -->

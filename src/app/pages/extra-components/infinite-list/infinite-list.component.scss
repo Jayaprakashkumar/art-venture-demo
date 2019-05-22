@@ -1,0 +1,19 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .infinite-cards {
+    nb-card {
+      &.own-scroll {
+        height: 50vh;
+      }
+    }
+  }
+
+  .key-series{
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .image-content{
+      width: 500px;
+      height:200px;
+  }
+}

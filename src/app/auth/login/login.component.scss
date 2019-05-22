@@ -1,0 +1,48 @@
+// .login-page{
+//     background-color: #2f296b;
+//     color:#a1a1e5;
+// }
+// .login-content{
+//     background-color:#6f42c1;
+//     padding: 10px;
+//     border-radius: 4px;
+// }
+// .login{
+//     color:#fff;
+// }
+
+.login-page{
+    input.form-control{
+        padding: 0.75rem 1.125rem;
+        color: #ffffff;
+        background-color: #37317a;
+        border: 2px solid #342e73;
+        font-family: Roboto;
+        border-radius: 0.5rem;
+    }
+    .google{
+        background-color: #db305b !important;
+    }
+    .btn{
+     color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    font-family: Exo;
+    border: 2px solid transparent;
+    -webkit-transition: none;
+    transition: none;
+    cursor: default;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: 0.5rem;
+    }
+    a{
+        color: #14ffbe;
+    }
+    h1{
+        text-align: center !important;
+        color:#212529 !important;
+      }
+}

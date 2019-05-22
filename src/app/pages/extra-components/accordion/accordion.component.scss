@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .accordion-container {
+    nb-card {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .accordion-container {
+      margin-bottom: 3rem;
+    }
+  }
+}
+.icon-comp h6{
+  padding: 17px;
+}
+.icon-comp p{
+  font-size: 16px;
+  padding: 15px;
+  line-height: 25px;
+}

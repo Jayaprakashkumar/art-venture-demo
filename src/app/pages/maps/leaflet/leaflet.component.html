@@ -1,0 +1,33 @@
+<div class="row icon-comp">
+  <div class="col">
+    <nb-card>
+      <nb-card-header></nb-card-header>
+      <nb-card-body>
+        <ngx-chartjs-line></ngx-chartjs-line>
+      </nb-card-body>
+      <h6>Auction house Christie's and Sotheby’s possesses the highest total sales price and lots sold.</h6>
+      <p>Among the different auction houses, Christie’s sold 70% of Katz’s artwork. Heffel Fine Art generated the most
+        sales with an average selling price of $81,012.48.</p>
+    </nb-card>
+  </div>
+  <div class="col">
+
+    <!-- <div class="report_header"> -->
+    <h3>KEY NUMBERS</h3>
+
+    <nb-card size="medium">
+      <nb-card-body>
+        <div class="progress-info" *ngFor="let item of sales_report">
+          <div class="title">{{ item.title }}</div>
+          <div class="value">{{ item.value }}</div>
+          <nb-progress-bar [value]="70"></nb-progress-bar>
+          <div class="description">
+            <bdi>{{ item.description }}</bdi>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <!-- </div> -->
+
+  </div>
+</div>

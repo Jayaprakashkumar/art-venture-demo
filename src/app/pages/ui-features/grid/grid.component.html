@@ -1,0 +1,301 @@
+<div class="row icon-comp">
+  <div class="col">
+    <nb-card>
+      <nb-card-header>HAMMER PRICE AND SELL THROUGH RATE, ADA</nb-card-header>
+      <nb-card-body>
+        <ngx-chartjs-line></ngx-chartjs-line>
+      </nb-card-body>
+
+      <h6>High potential to surpass the last annual auction sale peak (2014) and investors expectations of reduced
+        turbulence in sell-through rate as a result of the increased supply on the secondary market. </h6>
+
+      <p>Katz’s “Ada” series’ art market auction sale totalled to $5,935,751, above the low estimate price ($5,302,192)
+        and
+        below the high estimate price ($7,700,053). In 2001, the “Ada” series’ total sale was nine times higher than its
+        previous year’s sale because of “Blue Umbrella #2” that was sold for $600K (ranked third in highest-sold works).
+        Throughout his career, this series’ annual hammer price fluctuates between the auction house’s estimation prices
+        every
+        other year. After 2014, a positive outlook in the growth of this series’ sale performance shows the yearly
+        hammer
+        price is consistently increasing. Despite the low sell-through rates in 2001 and 2008, each respectively at 33%
+        and
+        25%, around 91% of the “Ada” series’ work was sold on the auction market, demonstrating a high investor demand.
+        His
+        annual average hammer price is around 1.35 times beyond the low estimate price. This series’s most supplied
+        price
+        range is between $20-40K, where the average price/cm² is at $18.77.</p>
+
+      <h6>According to the two graphs, we can see this series’ strong increase in supply and in total sales after 2017.
+      </h6>
+    </nb-card>
+  </div>
+  <div class="col">
+
+    <h3>KEY NUMBERS</h3>
+
+    <nb-card size="medium">
+      <nb-card-body>
+        <div class="progress-info" *ngFor="let item of sales_report">
+          <div class="title">{{ item.title }}</div>
+          <div class="value">{{ item.value }}</div>
+          <nb-progress-bar [value]="70"></nb-progress-bar>
+          <div class="description">
+            <bdi>{{ item.description }}</bdi>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>
+        Grid System
+      </nb-card-header>
+      <nb-card-body>
+        <h5 class="grid-h">Stacked to horizontal</h5>
+        <div class="row show-grid">
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+          <div class="col-md-1">
+            <div>.col-md-1</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-md-8">
+            <div>.col-md-8</div>
+          </div>
+          <div class="col-md-4">
+            <div>.col-md-4</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-md-4">
+            <div>.col-md-4</div>
+          </div>
+          <div class="col-md-4">
+            <div>.col-md-4</div>
+          </div>
+          <div class="col-md-4">
+            <div>.col-md-4</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-md-6">
+            <div>.col-md-6</div>
+          </div>
+          <div class="col-md-6">
+            <div>.col-md-6</div>
+          </div>
+        </div>
+
+        <h5 class="grid-h">Mobile and desktop</h5>
+        <div class="row show-grid">
+          <div class="col-12 col-md-8">
+            <div>.col-12 .col-md-8</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div>.col-6 .col-md-4</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-6 col-md-4">
+            <div>.col-6 .col-md-4</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div>col-6 .col-md-4</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div>.col-6 .col-md-4</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-6">
+            <div>.col-6</div>
+          </div>
+          <div class="col-6">
+            <div>.col-6</div>
+          </div>
+        </div>
+
+        <h5 class="grid-h">Mobile, tablet, desktop</h5>
+        <div class="row show-grid">
+          <div class="col-12 col-sm-6 col-md-8">
+            <div>.col-12 .col-sm-6 .col-md-8</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div>.col-6 .col-md-4</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-6 col-sm-4">
+            <div>.col-6 .col-sm-4</div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div>.col-6 .col-sm-4</div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div>.col-6 .col-sm-4</div>
+          </div>
+        </div>
+
+        <h5 class="grid-h">Column wrapping</h5>
+        <div class="row show-grid">
+          <div class="col-9">
+            <div>.col-9</div>
+          </div>
+          <div class="col-4">
+            <div>.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.
+            </div>
+          </div>
+          <div class="col-6">
+            <div>.col-6<br>Subsequent columns continue along the new line.</div>
+          </div>
+        </div>
+
+        <h5 class="grid-h">Responsive column resets</h5>
+        <div class="row show-grid">
+          <div class="col-6 col-sm-3">
+            <div>.col-6 .col-sm-3
+              <p>Resize your viewport or check it out on your phone for an example.</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div>.col-6 .col-sm-3</div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div>.col-6 .col-sm-3</div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div>.col-6 .col-sm-3</div>
+          </div>
+        </div>
+
+        <h5 class="grid-h">Offsetting columns</h5>
+        <div class="row show-grid">
+          <div class="col-md-4">
+            <div>.col-md-4</div>
+          </div>
+          <div class="col-md-4 offset-md-4">
+            <div>.col-md-4 .offset-md-4</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-md-3 offset-md-3">
+            <div>.col-md-3 .offset-md-3</div>
+          </div>
+          <div class="col-md-3 offset-md-3">
+            <div>.col-md-3 .offset-md-3</div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-md-6 offset-md-3">
+            <div>.col-md-6 .offset-md-3</div>
+          </div>
+        </div>
+
+        <h5 class="grid-h">Grid options</h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th> Extra small devices
+                  <small>Phones (&lt;576px)</small>
+                </th>
+                <th> Small devices
+                  <small>Tablets (≥576px)</small>
+                </th>
+                <th> Medium devices
+                  <small>Desktops (≥768px)</small>
+                </th>
+                <th> Large devices
+                  <small>Desktops (≥992px)</small>
+                </th>
+                <th> Large devices
+                  <small>Desktops (≥1200px)</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">Grid behavior</th>
+                <td>Horizontal at all times</td>
+                <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Container width</th>
+                <td>None (auto)</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Class prefix</th>
+                <td><code>.col-</code></td>
+                <td><code>.col-sm-</code></td>
+                <td><code>.col-md-</code></td>
+                <td><code>.col-lg-</code></td>
+                <td><code>.col-xl-</code></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row"># of columns</th>
+                <td colspan="5">12</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Gutter width</th>
+                <td colspan="5">1.875rem / 30px (15px on each side of a column)</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Nestable</th>
+                <td colspan="5">Yes</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Offsets</th>
+                <td colspan="5">Yes</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Column ordering</th>
+                <td colspan="5">Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div> -->

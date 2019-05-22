@@ -1,0 +1,35 @@
+<div class="row icon-comp">
+  <div class="col">
+    <nb-card>
+      <nb-card-header>PRODUCTION YEAR</nb-card-header>
+      <nb-card-body>
+        <ngx-chartjs-line></ngx-chartjs-line>
+      </nb-card-body>
+      <h6>It is recommended to invest in artworks produced in the recent years (2000-2010).</h6>
+      <p>Katz’s career in fine art began in 1946, the number of works produced each year increased since then until the
+        recent production break in 2014. The artwork’s average hammer price is the highest during the 2000-2010 at
+        $1,003,669, where on average 10 paintings produced and supplied on the auction house. Due to the high media
+        exposure in Katz’s recent production years, it is recommended to invest in artworks produced from 2000-2010.</p>
+    </nb-card>
+  </div>
+  <div class="col">
+
+    <!-- <div class="report_header"> -->
+    <h3>KEY NUMBERS</h3>
+
+    <nb-card size="medium">
+      <nb-card-body>
+        <div class="progress-info" *ngFor="let item of sales_report">
+          <div class="title">{{ item.title }}</div>
+          <div class="value">{{ item.value }}</div>
+          <nb-progress-bar [value]="70"></nb-progress-bar>
+          <div class="description">
+            <bdi>{{ item.description }}</bdi>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <!-- </div> -->
+
+  </div>
+</div>

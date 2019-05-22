@@ -1,0 +1,116 @@
+<div class="row hammer-price">
+  <div class="col">
+    <nb-card>
+      <nb-card-header>Social Sentiment</nb-card-header>
+      <nb-card-body>
+        <ngx-chartjs-line></ngx-chartjs-line>
+      </nb-card-body>
+
+      <h4>The increase in media coverage of Alex Katz in the past two years likely had a positive impact on his art
+        market performance in the recent years.
+      </h4>
+
+      <p>In recent years, Katz has developed a close relationship with the fashion industry, which in turn has helped
+        him getting more media exposure. He modeled for a J. Crew campaign back in 2009, and collaborated with the
+        Swedish fast-fashion brand H&M in 2016 to launch a design collection. Fashion magazines such as Harper’s Bazaar
+        and Vogue have featured his works in photoshoots and conducted interviews with the artist as well. In 2017 and
+        2018, Katz has been featured in numerous interviews with influential media agencies— The New Yorker, New York
+        Times, The Guardian, Financial Times, to name a few—partly in anticipation for his newly published book Looking
+        at Art with Alex Katz, as well as for promoting his galleries shows of the two most recent series, Coca-Cola
+        Girls and Calvin Klein Girls. The increase in media coverage of Alex Katz in the past two years (may) have a
+        positive impact on his art market performance.</p>
+    </nb-card>
+  </div>
+
+  <div class="col">
+    <!-- content to be added -->
+    <nb-card>
+      <nb-card-header></nb-card-header>
+      <nb-card-body>
+        <ngx-chartjs-bar></ngx-chartjs-bar>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nb-card>
+  <nb-card-header>
+    Toaster configuration
+  </nb-card-header>
+  <nb-card-body>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label class="form-control-label">Place to show toast:</label>
+          <div class="dropdown" ngbDropdown>
+            <button class="btn btn-primary" type="button" ngbDropdownToggle>
+              {{ position }}
+            </button>
+            <ul ngbDropdownMenu class="dropdown-menu">
+              <li class="dropdown-item" *ngFor="let p of positions" (click)="position = p">
+                {{ p }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-control-label">Title:</label>
+          <input class="form-control" [(ngModel)]="title" name="title">
+        </div>
+        <form>
+          <div class="form-group">
+            <label class="form-control-label">Content:</label>
+            <input class="form-control" [(ngModel)]="content" name="content">
+          </div>
+        </form>
+        <div class="form-group">
+          <label class="form-control-label">Time to hide toast, ms. 0 to persistent toast:</label>
+          <input class="form-control" type="number" [(ngModel)]="duration" name="timeout">
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label class="form-control-label">Toast type:</label>
+          <div class="dropdown" ngbDropdown>
+            <button class="btn btn-primary" type="button" ngbDropdownToggle>
+              {{ status }}
+            </button>
+            <ul ngbDropdownMenu class="dropdown-menu">
+              <li class="dropdown-item" *ngFor="let t of types" (click)="status = t">{{ t }}</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div><nb-checkbox [(ngModel)]="destroyByClick">Hide on click</nb-checkbox></div>
+        <div><nb-checkbox [(ngModel)]="preventDuplicates">Prevent arising of duplicate toast</nb-checkbox></div>
+        <div><nb-checkbox [(ngModel)]="hasIcon">Show toast with icon</nb-checkbox></div>
+      </div>
+    </div>
+  </nb-card-body>
+
+  <nb-card-footer>
+    <button class="btn btn-primary" (click)="makeToast()">Show toast</button>
+    <button class="btn btn-success" (click)="openRandomToast()">Random toast</button>
+  </nb-card-footer>
+</nb-card> -->

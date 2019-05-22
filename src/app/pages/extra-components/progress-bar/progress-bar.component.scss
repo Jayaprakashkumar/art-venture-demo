@@ -1,0 +1,15 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-progress-bar ~ nb-progress-bar {
+    margin-top: 1rem;
+  }
+}
+.icon-comp h6{
+  padding: 17px;
+}
+.icon-comp p{
+  font-size: 16px;
+  padding: 15px;
+  line-height: 25px;
+}

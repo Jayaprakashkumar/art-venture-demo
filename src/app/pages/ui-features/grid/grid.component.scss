@@ -1,0 +1,82 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+  .icon-comp h6{
+    padding: 17px;
+  }
+  .icon-comp p{
+    font-size: 16px;
+    padding: 15px;
+    line-height: 25px;
+  }
+  
+  .progress-info {
+    color: nb-theme(color-fg-heading);
+    margin-top: 2.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .title {
+    font-family: nb-theme(font-secondary);
+    font-size: nb-theme(font-size-lg);
+    font-weight: nb-theme(font-weight-bold);
+  }
+
+  .value {
+    font-size: 3rem;
+    font-weight: nb-theme(font-weight-light);
+    margin-top: 0.5rem;
+  }
+
+  .show-grid {
+    .row {
+      margin: -0.5rem;
+    }
+
+    div[class^=col-] {
+      padding: 0.5rem;
+      box-sizing: border-box;
+
+      div {
+        text-align: center;
+        background-color: nb-theme(color-bg-active);
+        padding: 0.75rem 0.25rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  .grid-h {
+    margin-top: 1.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .table-responsive {
+    margin-top: 1rem;
+  }
+
+  .image-content{
+    width: 800px;
+    height: 300px;
+  }
+  .report_header{
+    border: 1px solid #cccccc;
+    margin-bottom: 30px;
+  }
+  
+  tbody tr:first-child td{
+    border-top:none;
+  }
+
+ 
+
+
+
+}

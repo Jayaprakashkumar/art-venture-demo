@@ -1,0 +1,115 @@
+<div class="row icon-comp">
+  <div class="col">
+    <nb-card>
+      <nb-card-header>HAMMER PRICE AND SELL THROUGH RATE, FLOWER</nb-card-header>
+      <nb-card-body>
+        <ngx-chartjs-line></ngx-chartjs-line>
+      </nb-card-body>
+      <h6>Strong investor confidence on Katz’s flower paintings from 1984-2014. However, bearish investment on the
+        recent
+        supply on the secondary market after the supply break. </h6>
+      <p>Katz’s “flower” series’ art market auction sale totalled to $3,522,785, which is above the low estimate price
+        ($2,606,352) and below the high estimate price ($3,843,008). In 2007, the “flower” series’ total sale was around
+        twelve times higher than its previous year’s sale because of “Red Tulips” that was sold for $580K (ranked fourth
+        in highest-sold works). From 2011-2018, we see a high fluctuated hammer price every other due to an inconsistent
+        supply on the secondary market because none “flower” series were auctioned in 2015-2016. Despite to a low
+        sell-through rate at 33% in 2009, around 95% of the “paintings in the Flower series” was sold on the auction
+        market, demonstrating a high investor demand. His annual average hammer price is around 1.48 times beyond the
+        low estimate price. This series’s highly varied price range, the most supplied paintings price range is between
+        $0-50K, where the average price/cm² is at $17.85.</p>
+
+    </nb-card>
+  </div>
+  <div class="col">
+
+    <!-- <div class="report_header"> -->
+    <h3>KEY NUMBERS</h3>
+
+    <nb-card size="medium">
+      <nb-card-body>
+        <div class="progress-info" *ngFor="let item of sales_report">
+          <div class="title">{{ item.title }}</div>
+          <div class="value">{{ item.value }}</div>
+          <nb-progress-bar [value]="70"></nb-progress-bar>
+          <div class="description">
+            <bdi>{{ item.description }}</bdi>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <!-- </div> -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="row">
+  <div class="col-md-12 col-lg-6">
+    <nb-card>
+      <nb-card-header>
+        Eva Icons
+      </nb-card-header>
+      <nb-card-body>
+        <div class="icon" *ngFor="let icon of evaIcons">
+          <i class="eva-icon-container" [nbPopover]="icon">
+            <i [innerHTML]="icon | eva: { animationType: 'pulse' }"></i>
+          </i>
+        </div>
+      </nb-card-body>
+      <nb-card-footer>
+        <a href="https://akveo.github.io/eva-icons/" target="_blank">See all Eva Icons</a>
+      </nb-card-footer>
+    </nb-card>
+  </div>
+
+  <div class="col-md-12 col-lg-6">
+    <nb-card class="nb-icons">
+      <nb-card-header>
+        Nebular
+      </nb-card-header>
+      <nb-card-body>
+        <div class="icon"
+             *ngFor="let icon of icons.nebular">
+          <i class="{{ icon }}" [nbPopover]="icon"></i>
+        </div>
+      </nb-card-body>
+    </nb-card>
+
+    <nb-card>
+      <nb-card-header>
+        Font awesome icons
+      </nb-card-header>
+      <nb-card-body>
+        <div class="icon"
+             *ngFor="let icon of icons.fontAwesome">
+          <i class="{{ icon }}" [nbPopover]="icon"></i>
+        </div>
+      </nb-card-body>
+      <nb-card-footer>
+        <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">
+          See all Font Awesome icons
+        </a>
+      </nb-card-footer>
+    </nb-card>
+
+    <nb-card>
+      <nb-card-header>
+        Ionicons
+      </nb-card-header>
+      <nb-card-body>
+        <div class="icon" *ngFor="let icon of icons.ionicons">
+          <i class="{{ icon }}" [nbPopover]="icon"></i>
+        </div>
+      </nb-card-body>
+      <nb-card-footer>
+        <a href="http://ionicons.com/" target="_blank">See all ionicons</a>
+      </nb-card-footer>
+    </nb-card>
+
+  </div>
+</div> -->
